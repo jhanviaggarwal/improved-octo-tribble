@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Destinations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="seasons"></div>
+    <div id="destinations"></div>
+    <div id="places"></div>
+
+    <div class="text-button-container">
+      <div class="text-before-buttons">
+        TO SEE THE WEATHER FORECAST OF ANY REGION , CLICK HERE ------ >
+      </div>
+      <button id="weather-btn" class="button">See Weather Forecast</button>
+    </div>
+
+    <div class="text-button-container">
+      <div class="text-before-buttons">
+        IF YOU WANT TO CREATE YOUR OWN ITINERARY , CLICK HERE ------- >
+      </div>
+      <button onclick="window.location.href='itinerary.html'" id="create-itinerary-btn" class="button">
+        Create Your Own Itinerary
+      </button>
+    </div>
+
+    <div class="text-button-container">
+  <div class="text-before-buttons">
+    TO SEE PRE-MADE ITINERARIES, CLICK HERE ------- >
+  </div>
+  <button onclick="window.location.href='premade.html'" id="premade-itinerary-btn" class="button">
+    Pre-Made Itineraries
+  </button>
+</div>
+
+<!-- New button to navigate to gallery.html -->
+    <div class="text-button-container">
+      <div class="text-before-buttons">
+        TO VIEW ALL POSTS IN THE GALLERY , CLICK HERE ---------------- >
+      </div>
+      <button onclick="window.location.href='gallery.html'" id="view-gallery-btn" class="button">
+        View Gallery
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="itineraries.js"></script>
+  </body>
+</html>

@@ -1,0 +1,427 @@
+[
+  {
+    "name": "Summer Trip to Shimla",
+    "season": "summer",
+    "totalBudget": 10000,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Shimla", "Visit Mall Road"],
+      "Day 2": ["Jakhoo Temple", "Shopping at Lakkar Bazaar"],
+      "Day 3": ["Kufri excursion", "Horse riding"],
+      "Day 4": ["Relax at Naldehra"],
+      "Day 5": ["Departure from Shimla"]
+    },
+    "hotelRecommendations": [
+      "Hotel Willow Banks",
+      "The Oberoi Cecil",
+      "Snow Valley Resorts"
+    ],
+    "flightRecommendations": [
+      "Delhi to Chandigarh (Flight #123)",
+      "Chandigarh to Delhi (Flight #456)"
+    ],
+    "description": "Shimla, the Queen of Hills, offers scenic views, colonial charm, and a relaxing retreat from city life."
+  },
+  {
+    "name": "Beach Getaway to Goa",
+    "season": "summer",
+    "totalBudget": 20000,
+    "duration": 7,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Goa", "Relax at Baga Beach"],
+      "Day 2": ["Visit Calangute Beach", "Water sports activities"],
+      "Day 3": ["Dona Paula", "Cruise on Mandovi River"],
+      "Day 4": ["Explore Old Goa", "Visit Basilica of Bom Jesus"],
+      "Day 5": ["Visit Anjuna Flea Market", "Sunset at Vagator Beach"],
+      "Day 6": ["Day trip to Dudhsagar Falls"],
+      "Day 7": ["Departure from Goa"]
+    },
+    "hotelRecommendations": [
+      "Taj Exotica Resort & Spa",
+      "Goa Marriott Resort & Spa",
+      "The Leela Goa"
+    ],
+    "flightRecommendations": [
+      "Mumbai to Goa (Flight #321)",
+      "Goa to Mumbai (Flight #654)"
+    ],
+    "description": "Goa offers a beautiful combination of beaches, history, and vibrant nightlife perfect for a summer retreat."
+  },
+  {
+    "name": "Adventure Tour to Manali",
+    "season": "summer",
+    "totalBudget": 15000,
+    "duration": 6,
+    "dayWisePlan": {
+      "Day 1": [
+        "Arrival in Manali",
+        "Visit Solang Valley for adventure sports"
+      ],
+      "Day 2": ["Explore Rohtang Pass", "Paragliding in Solang"],
+      "Day 3": ["Visit Hidimba Temple", "Explore Old Manali"],
+      "Day 4": ["Visit Manu Temple", "Shopping at Mall Road"],
+      "Day 5": ["Relax at Vashisht Hot Springs"],
+      "Day 6": ["Departure from Manali"]
+    },
+    "hotelRecommendations": [
+      "Manali Heights",
+      "The Himalayan",
+      "Apple Country Resort"
+    ],
+    "flightRecommendations": [
+      "Delhi to Kullu (Flight #789)",
+      "Kullu to Delhi (Flight #987)"
+    ],
+    "description": "Manali is a top summer destination for adventure lovers, offering thrilling activities like skiing, paragliding, and mountain biking."
+  },
+  {
+    "name": "Historical Tour to Delhi and Agra",
+    "season": "summer",
+    "totalBudget": 12000,
+    "duration": 3,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Delhi", "Visit Red Fort"],
+      "Day 2": ["Visit Qutub Minar", "Explore Humayun's Tomb"],
+      "Day 3": ["Visit Taj Mahal in Agra", "Explore Agra Fort"],
+      "Day 4": ["Visit Fatehpur Sikri", "Explore Mehtab Bagh"],
+      "Day 5": ["Departure from Delhi"]
+    },
+    "hotelRecommendations": [
+      "The Oberoi Delhi",
+      "Taj Palace Hotel",
+      "ITC Mughal Agra"
+    ],
+    "flightRecommendations": [
+      "Mumbai to Delhi (Flight #135)",
+      "Delhi to Mumbai (Flight #246)"
+    ],
+    "description": "A cultural and historical journey through India's capital and the iconic city of Agra, home to the magnificent Taj Mahal."
+  },
+  {
+    "name": "Luxury Vacation in Udaipur",
+    "season": "summer",
+    "totalBudget": 25000,
+    "duration": 4,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Udaipur", "Visit City Palace"],
+      "Day 2": ["Boat ride on Lake Pichola", "Visit Jag Mandir"],
+      "Day 3": ["Visit Sajjangarh Monsoon Palace", "Explore Fateh Sagar Lake"],
+      "Day 4": ["Departure from Udaipur"]
+    },
+    "hotelRecommendations": [
+      "The Oberoi Udaivilas",
+      "Taj Lake Palace",
+      "Leela Palace Udaipur"
+    ],
+    "flightRecommendations": [
+      "Delhi to Udaipur (Flight #654)",
+      "Udaipur to Delhi (Flight #987)"
+    ],
+    "description": "Udaipur, known as the Venice of the East, offers majestic palaces, tranquil lakes, and romantic experiences perfect for summer."
+  },
+  {
+    "name": "Winter Expedition in Leh-Ladakh",
+    "season": "winter",
+    "totalBudget": 18000,
+    "duration": 8,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Leh", "Visit Leh Palace"],
+      "Day 2": ["Visit Shanti Stupa", "Explore Thiksey Monastery"],
+      "Day 3": ["Adventure activities in Nubra Valley"],
+      "Day 4": ["Explore Pangong Lake"],
+      "Day 5": ["Visit Khardung La Pass"],
+      "Day 6": ["Snow trekking in Tso Moriri Lake"],
+      "Day 7": ["Visit Magnetic Hill", "Explore the local market in Leh"],
+      "Day 8": ["Departure from Leh"]
+    },
+    "hotelRecommendations": [
+      "The Grand Dragon Leh",
+      "Hotel Ladakh Palace",
+      "Zik Zik Hotel"
+    ],
+    "flightRecommendations": [
+      "Delhi to Leh (Flight #951)",
+      "Leh to Delhi (Flight #743)"
+    ],
+    "description": "Leh-Ladakh is a winter wonderland, offering incredible landscapes and unique experiences like snow trekking and visiting frozen lakes."
+  },
+  {
+    "name": "Skiing in Auli",
+    "season": "winter",
+    "totalBudget": 22000,
+    "duration": 6,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Auli", "Rest and acclimatization"],
+      "Day 2": ["Skiing at Auli", "Visit Auli Artificial Lake"],
+      "Day 3": ["Skiing lessons", "Explore the local village"],
+      "Day 4": ["Day trip to Joshimath", "Explore Nanda Devi Temple"],
+      "Day 5": ["Skiing and snowboarding in the mountains"],
+      "Day 6": ["Departure from Auli"]
+    },
+    "hotelRecommendations": ["Clifftop Club", "GMVN Auli", "Auli Resort"],
+    "flightRecommendations": [
+      "Delhi to Dehradun (Flight #312)",
+      "Dehradun to Auli (Drive)"
+    ],
+    "description": "Auli is a popular destination for winter sports, especially skiing, with stunning views of the Himalayas."
+  },
+  {
+    "name": "Christmas Vacation in Shimla",
+    "season": "winter",
+    "totalBudget": 15000,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Shimla", "Explore the Ridge"],
+      "Day 2": ["Visit Kufri", "Christmas shopping at Mall Road"],
+      "Day 3": [
+        "Visit Jakhoo Temple",
+        "Ice skating at the Shimla Ice Skating Rink"
+      ],
+      "Day 4": ["Relax at Naldehra"],
+      "Day 5": ["Departure from Shimla"]
+    },
+    "hotelRecommendations": [
+      "The Oberoi Cecil",
+      "Hotel Snow View",
+      "Wildflower Hall"
+    ],
+    "flightRecommendations": [
+      "Delhi to Chandigarh (Flight #111)",
+      "Chandigarh to Delhi (Flight #222)"
+    ],
+    "description": "Celebrate Christmas in Shimla with snow, scenic views, and a charming colonial atmosphere."
+  },
+  {
+    "name": "Winter Adventure in Rishikesh",
+    "season": "winter",
+    "totalBudget": 13000,
+    "duration": 4,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Rishikesh", "Yoga at Parmarth Niketan"],
+      "Day 2": ["Visit Lakshman Jhula", "Rafting on the Ganges"],
+      "Day 3": [
+        "Explore Neelkanth Mahadev Temple",
+        "Trekking to Kunjapuri Temple"
+      ],
+      "Day 4": ["Departure from Rishikesh"]
+    },
+    "hotelRecommendations": [
+      "The Glasshouse on the Ganges",
+      "Aloha on the Ganges",
+      "Ganga Kinare"
+    ],
+    "flightRecommendations": [
+      "Delhi to Dehradun (Flight #233)",
+      "Dehradun to Delhi (Flight #444)"
+    ],
+    "description": "Rishikesh is a great winter destination for yoga, spirituality, and adventure sports."
+  },
+  {
+    "name": "Monsoon in Munnar",
+    "season": "monsoon",
+    "totalBudget": 12000,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Munnar", "Visit Tea Gardens"],
+      "Day 2": ["Visit Eravikulam National Park", "Explore Mattupetty Dam"],
+      "Day 3": ["Visit Attukal Waterfalls", "Relax in nature"],
+      "Day 4": ["Visit Echo Point", "Explore Top Station"],
+      "Day 5": ["Departure from Munnar"]
+    },
+    "hotelRecommendations": [
+      "The Fog Munnar",
+      "Fragrant Nature Munnar",
+      "Spice Tree Munnar"
+    ],
+    "flightRecommendations": [
+      "Cochin to Munnar (Drive)",
+      "Munnar to Cochin (Drive)"
+    ],
+    "description": "Munnar, with its lush tea plantations and misty hills, is an enchanting monsoon destination."
+  },
+  {
+    "name": "Monsoon in Munnar",
+    "season": "monsoon",
+    "totalBudget": 12000,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Munnar", "Visit Tea Gardens"],
+      "Day 2": ["Visit Eravikulam National Park", "Explore Mattupetty Dam"],
+      "Day 3": ["Visit Attukal Waterfalls", "Relax in nature"],
+      "Day 4": ["Visit Echo Point", "Explore Top Station"],
+      "Day 5": ["Departure from Munnar"]
+    },
+    "hotelRecommendations": [
+      "The Fog Munnar",
+      "Fragrant Nature Munnar",
+      "Spice Tree Munnar"
+    ],
+    "flightRecommendations": [
+      "Cochin to Munnar (Drive)",
+      "Munnar to Cochin (Drive)"
+    ],
+    "description": "Munnar, with its lush tea plantations and misty hills, is an enchanting monsoon destination."
+  },
+  {
+    "name": "Monsoon Escape to Coorg",
+    "season": "monsoon",
+    "totalBudget": 10000,
+    "duration": 6,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Coorg", "Relax at Coffee Plantation"],
+      "Day 2": ["Visit Abbey Falls", "Explore Raja's Seat"],
+      "Day 3": ["Trekking to Tadiandamol Peak"],
+      "Day 4": ["Visit Dubare Elephant Camp", "Enjoy Boating at Nagarhole"],
+      "Day 5": ["Explore Omkareshwara Temple", "Visit Madikeri Fort"],
+      "Day 6": ["Departure from Coorg"]
+    },
+    "hotelRecommendations": [
+      "Taj Madikeri Resort & Spa",
+      "Coorg Jungle Camp",
+      "The Tamara Coorg"
+    ],
+    "flightRecommendations": [
+      "Bangalore to Coorg (Drive)",
+      "Coorg to Bangalore (Drive)"
+    ],
+    "description": "Coorg is a monsoon haven with its rolling hills, lush greenery, and pleasant weather, ideal for nature lovers and adventure enthusiasts."
+  },
+  {
+    "name": "Monsoon in Wayanad",
+    "season": "monsoon",
+    "totalBudget": 11000,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Wayanad", "Visit Pookode Lake"],
+      "Day 2": ["Trekking at Edakkal Caves", "Visit Soochipara Waterfalls"],
+      "Day 3": ["Explore Wayanad Wildlife Sanctuary", "Visit Kuruva Island"],
+      "Day 4": ["Visit Meenmutty Waterfalls", "Explore Banasura Sagar Dam"],
+      "Day 5": ["Departure from Wayanad"]
+    },
+    "hotelRecommendations": [
+      "Vythiri Resort",
+      "Wayanad Silverwoods Resort",
+      "Banasura Hill Resort"
+    ],
+    "flightRecommendations": [
+      "Kochi to Wayanad (Drive)",
+      "Wayanad to Kochi (Drive)"
+    ],
+    "description": "Wayanad is a hidden gem in Kerala, famous for its rich wildlife, picturesque waterfalls, and serene surroundings, especially during the monsoon."
+  },
+  {
+    "name": "Monsoon Retreat in Mahabalipuram",
+    "season": "monsoon",
+    "totalBudget": 9000,
+    "duration": 4,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Mahabalipuram", "Visit Shore Temple"],
+      "Day 2": ["Explore Arjuna's Penance", "Visit Pancha Rathas"],
+      "Day 3": ["Relax on the beach", "Visit Tiger Cave"],
+      "Day 4": ["Departure from Mahabalipuram"]
+    },
+    "hotelRecommendations": [
+      "Radisson Blu Resort Temple Bay",
+      "Sankara Beach Resort",
+      "Ideal Beach Resort"
+    ],
+    "flightRecommendations": [
+      "Chennai to Mahabalipuram (Drive)",
+      "Mahabalipuram to Chennai (Drive)"
+    ],
+    "description": "Mahabalipuram offers a wonderful mix of beachside relaxation and ancient architecture, perfect for a peaceful monsoon getaway."
+  },
+  {
+    "name": "Rainy Days in Shillong",
+    "season": "monsoon",
+    "totalBudget": 9500,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Shillong", "Visit Umiam Lake"],
+      "Day 2": ["Explore Elephant Falls", "Visit Shillong Peak"],
+      "Day 3": ["Visit Don Bosco Museum", "Explore Ward's Lake"],
+      "Day 4": ["Trekking at Cherrapunji", "Visit Nohkalikai Falls"],
+      "Day 5": ["Departure from Shillong"]
+    },
+    "hotelRecommendations": [
+      "Pinewood Hotel",
+      "Hotel Polo Towers",
+      "Cloud 9"
+    ],
+    "flightRecommendations": [
+      "Guwahati to Shillong (Drive)",
+      "Shillong to Guwahati (Drive)"
+    ],
+    "description": "Shillong, also known as the Scotland of the East, is perfect during the monsoon with its lush greenery, waterfalls, and misty landscapes."
+  },
+  {
+    "name": "Monsoon Bliss in Rishikesh",
+    "season": "monsoon",
+    "totalBudget": 12000,
+    "duration": 6,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Rishikesh", "Visit Parmarth Niketan Ashram"],
+      "Day 2": ["Explore Lakshman Jhula", "Visit Neelkanth Mahadev Temple"],
+      "Day 3": ["Go rafting on the Ganges", "Visit Triveni Ghat"],
+      "Day 4": ["Trekking to Kunjapuri Temple", "Relax by the river"],
+      "Day 5": ["Visit Beatles Ashram", "Shopping at Rishikesh market"],
+      "Day 6": ["Departure from Rishikesh"]
+    },
+    "hotelRecommendations": [
+      "Ganga Kinare",
+      "Aloha on the Ganges",
+      "The Glasshouse on the Ganges"
+    ],
+    "flightRecommendations": [
+      "Delhi to Dehradun (Flight #123)",
+      "Dehradun to Delhi (Flight #456)"
+    ],
+    "description": "Rishikesh offers tranquility and adventure, with rafting, trekking, and spiritual experiences, making it perfect for a monsoon retreat."
+  },
+  {
+    "name": "Explore the Monsoons of Kerala",
+    "season": "monsoon",
+    "totalBudget": 15000,
+    "duration": 7,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Kochi", "Visit Fort Kochi"],
+      "Day 2": ["Explore Mattancherry Palace", "Visit Chinese Fishing Nets"],
+      "Day 3": ["Day trip to Alleppey Backwaters"],
+      "Day 4": ["Visit Periyar Wildlife Sanctuary", "Enjoy a boat ride"],
+      "Day 5": ["Explore Vagamon Hills", "Visit Parunthupara"],
+      "Day 6": ["Explore the hill station of Munnar", "Visit Tea Gardens"],
+      "Day 7": ["Departure from Kochi"]
+    },
+    "hotelRecommendations": [
+      "Le Meridien Kochi",
+      "The Zuri Kumarakom",
+      "Taj Kumarakom Resort"
+    ],
+    "flightRecommendations": [
+      "Delhi to Kochi (Flight #234)",
+      "Kochi to Delhi (Flight #567)"
+    ],
+    "description": "Kerala in the monsoon season offers a magical combination of backwaters, wildlife sanctuaries, and hill stations, perfect for a rejuvenating experience."
+  },
+  {
+    "name": "Monsoon Tour to Lonavala",
+    "season": "monsoon",
+    "totalBudget": 7000,
+    "duration": 3,
+    "dayWisePlan": {
+      "Day 1": ["Arrival in Lonavala", "Visit Bhushi Dam"],
+      "Day 2": ["Explore Tiger's Leap", "Visit Karla Caves"],
+      "Day 3": ["Relax at Lonavala Lake", "Departure from Lonavala"]
+    },
+    "hotelRecommendations": [
+      "Fariyas Resort",
+      "Lonavala Holiday Resort",
+      "Della Resorts"
+    ],
+    "flightRecommendations": [
+      "Mumbai to Lonavala (Drive)",
+      "Lonavala to Mumbai (Drive)"
+    ],
+    "description": "Lonavala's monsoon charm with its waterfalls, lakes, and greenery makes it an ideal destination for a short weekend getaway."
+  }
+]

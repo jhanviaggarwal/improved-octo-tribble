@@ -1,0 +1,67 @@
+[
+  {
+    "id": 9,
+    "name": "Winter Adventure in Rishikesh",
+    "season": "monsoon",
+    "totalBudget": 12000,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": [
+        "Arrival in Rishikesh",
+        "Yoga at Parmarth Niketan"
+      ],
+      "Day 2": [
+        "Visit Lakshman Jhula",
+        "Rafting on the Ganges"
+      ],
+      "Day 3": [
+        "Explore Neelkanth Mahadev Temple",
+        "Trekking to Kunjapuri Temple"
+      ],
+      "Day 4": [
+        "Departure from Rishikesh"
+      ]
+    },
+    "hotelRecommendations": [
+      "The Glasshouse on the Ganges",
+      "Aloha on the Ganges",
+      "Ganga Kinare"
+    ],
+    "flightRecommendations": [
+      "Delhi to Dehradun (Flight #233)",
+      "Dehradun to Delhi (Flight #444)"
+    ],
+    "description": "Rishikesh is a great winter destination for yoga, spirituality, and adventure sports."
+  },
+  {
+    "id": 18,
+    "name": "khandala",
+    "season": "monsoon",
+    "totalBudget": 12000,
+    "duration": 5,
+    "dayWisePlan": {
+      "Day 1": [
+        "Arrival in Lonavala",
+        "Visit Bhushi Dam"
+      ],
+      "Day 2": [
+        "Explore Tiger's Leap",
+        "Visit Karla Caves"
+      ],
+      "Day 3": [
+        "Relax at Lonavala Lake",
+        "Departure from Lonavala"
+      ]
+    },
+    "hotelRecommendations": [
+      "Fariyas Resort",
+      "Lonavala Holiday Resort",
+      "Della Resorts"
+    ],
+    "flightRecommendations": [
+      "Mumbai to Lonavala (Drive)",
+      "Lonavala to Mumbai (Drive)"
+    ],
+    "description": "Lonavala's monsoon charm with its waterfalls, lakes, and greenery makes it an ideal destination for a short weekend getaway."
+  }
+]

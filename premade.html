@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itinerary Planner</title>
+    <style>
+   /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes up the entire height of the page */
+  width: 100%; /* Ensure the body takes up the entire width of the page */
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #333;
+  margin: 0;
+}
+
+body {
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 100%; /* Ensure header spans the full width */
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%; /* Allow the main container to take up full width */
+  height: calc(100vh - 60px); /* Take up the remaining height after header */
+  overflow-y: auto; /* Make sure content scrolls if it's taller than the screen */
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* You can adjust this max-width to suit your needs */
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.itinerary-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px; /* You can adjust this max-width to suit your needs */
+}
+
+.itinerary-item {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-item h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.itinerary-item p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Itinerary Planner</h1>
+    </header>
+
+    
+      <!-- Search Form -->
+      <div class="form-container">
+        <h2>Search Itinerary</h2>
+        <label for="searchSeasonInput">Search by Season:</label>
+        <input type="text" id="searchSeasonInput" placeholder="Enter season to search" />
+
+        <label for="searchBudgetInput">Search by Budget:</label>
+        <input type="number" id="searchBudgetInput" placeholder="Enter budget to search" />
+
+        <label for="searchDurationInput">Search by Duration:</label>
+        <input type="number" id="searchDurationInput" placeholder="Enter duration to search" />
+
+        <button id="searchButton">Search</button>
+      </div>
+
+      <!-- Results Section -->
+      <div class="itinerary-container" id="results"></div>
+
+      <!-- Save Itinerary by ID -->
+      <div class="form-container">
+        <h2>Save Selected Itinerary</h2>
+        <label for="itineraryIdInput">Itinerary ID:</label>
+        <input type="number" id="itineraryIdInput" placeholder="Enter itinerary ID to save" />
+        <button id="saveItineraryButton">Save Itinerary</button>
+        <div class="error-message" id="saveErrorMessage"></div>
+      </div>
+
+      <!-- Customize Itinerary -->
+      <div class="form-container">
+        <h2>Customize Selected Itinerary</h2>
+        <label for="updateItineraryIdInput">Itinerary ID:</label>
+        <input type="number" id="updateItineraryIdInput" placeholder="Enter itinerary ID to customize" />
+
+        <label for="updatedName">Update Name:</label>
+        <input type="text" id="updatedName" placeholder="Enter new name (optional)" />
+
+        <label for="updatedBudget">Update Budget:</label>
+        <input type="number" id="updatedBudget" placeholder="Enter new budget (optional)" />
+
+        <label for="updatedDuration">Update Duration:</label>
+        <input type="number" id="updatedDuration" placeholder="Enter new duration (optional)" />
+
+        <button id="updateItineraryButton">Update Itinerary</button>
+        <div class="error-message" id="updateErrorMessage"></div>
+      </div>
+<script>
+  // Search functionality
+  document.getElementById("searchButton").addEventListener("click", () => {
+    const season = document.getElementById("searchSeasonInput").value;
+    const totalBudget = document.getElementById("searchBudgetInput").value;
+    const duration = document.getElementById("searchDurationInput").value;
+
+    // Validate inputs
+    if (!season && !totalBudget && !duration) {
+      alert("Please provide at least one search parameter.");
+      return;
+    }
+
+    // Prepare the request body
+    const requestBody = {};
+    if (season) requestBody.season = season;
+    if (totalBudget) requestBody.totalBudget = parseInt(totalBudget);
+    if (duration) requestBody.duration = parseInt(duration);
+
+    // Make POST request to /api/filter
+    fetch("/api/filter", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(requestBody),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.error) {
+          alert(data.error);
+        } else {
+          displayItineraries(data);
+        }
+      })
+      .catch((error) => console.error("Error:", error));
+  });
+
+  function displayItineraries(itineraries) {
+    const results = document.getElementById("results");
+    results.innerHTML = "";
+
+    if (itineraries.length === 0) {
+      results.innerHTML = "<p>No itineraries found matching your search criteria.</p>";
+      return;
+    }
+
+    itineraries.forEach((item) => {
+      results.innerHTML += `
+        <div class="itinerary-item">
+          <h3>${item.name} (ID: ${item.id})</h3>
+          <p><strong>Description:</strong> ${item.description}</p>
+          <p><strong>Budget:</strong> ₹${item.totalBudget}, <strong>Duration:</strong> ${item.duration} days</p>
+          <h4>Day-wise Plan:</h4>
+          <ul>
+            ${Object.entries(item.dayWisePlan)
+              .map(
+                ([day, activities]) =>
+                  `<li><strong>${day}:</strong> ${activities.join(", ")}</li>`
+              )
+              .join("")}
+          </ul>
+          <h4>Hotel Recommendations:</h4>
+          <ul>
+            ${item.hotelRecommendations
+              .map((hotel) => `<li>${hotel}</li>`)
+              .join("")}
+          </ul>
+          <h4>Flight Recommendations:</h4>
+          <ul>
+            ${item.flightRecommendations
+              .map((flight) => `<li>${flight}</li>`)
+              .join("")}
+          </ul>
+        </div>`;
+    });
+  }
+  // Save functionality
+  document.getElementById("saveItineraryButton").addEventListener("click", () => {
+    const id = parseInt(document.getElementById("itineraryIdInput").value);
+
+    if (!id) {
+      alert("Please provide a valid itinerary ID.");
+      return;
+    }
+
+    fetch("/api/save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.error) {
+          alert(data.error);
+        } else {
+          alert(data.message);
+        }
+      })
+      .catch((error) => console.error("Error:", error));
+  });
+
+  // Update functionality
+  document.getElementById("updateItineraryButton").addEventListener("click", () => {
+    const id = parseInt(document.getElementById("updateItineraryIdInput").value);
+    const updatedName = document.getElementById("updatedName").value;
+    const updatedBudget = document.getElementById("updatedBudget").value;
+    const updatedDuration = document.getElementById("updatedDuration").value;
+
+    if (!id) {
+      alert("Please provide a valid itinerary ID.");
+      return;
+    }
+
+    // Prepare the updated itinerary object
+    const updatedItinerary = {};
+    if (updatedName) updatedItinerary.name = updatedName;
+    if (updatedBudget) updatedItinerary.totalBudget = parseInt(updatedBudget);
+    if (updatedDuration) updatedItinerary.duration = parseInt(updatedDuration);
+
+    fetch("/api/update", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, updatedItinerary }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.error) {
+          alert(data.error);
+        } else {
+          alert(data.message);
+        }
+      })
+      .catch((error) => console.error("Error:", error));
+  });
+</script>
+
+
+  </body>
+</html>
